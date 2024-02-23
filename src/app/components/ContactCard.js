@@ -1,4 +1,4 @@
-import styles from "@/app/contact/contact.module.css"
+import  styles from "@/app/contact/contact.module.css"
 import { MdEmail, MdVoiceChat, MdForum } from "react-icons/md";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ const ContactCard = () => {
                         <h2>Email</h2>
                         <p>Monday to Friday Expected </p>
                         <p className={styles.last_para}>response time: 72 hours </p>
-                        <Link href="/" >  Send Email <span>-&gt;</span></Link>
+                        <Link href="/">  Send Email <span>-&gt;</span></Link>
                     </div>
 
                     <div className={styles.grid_card}>
@@ -30,10 +30,11 @@ const ContactCard = () => {
                         <p className={styles.last_para}>response time: 72 hours </p>
                         <Link href="/" className={styles.anchorLink}>  Ask The Community <span>-&gt;</span></Link>
                     </div>
+
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ContactCard
+export default ContactCard;
